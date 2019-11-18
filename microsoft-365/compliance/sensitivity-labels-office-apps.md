@@ -15,7 +15,7 @@ search.appverid:
 description: "Learn about how users work with sensitivity labels in Office apps for the desktop, Office apps for mobile, and Office apps for the web. Find out which apps support sensitivity labels."
 ---
 
-# Sensitivity labels in Office apps
+# Built-In Sensitivity labels in Office apps
 
 This article describes:
 
@@ -45,7 +45,7 @@ To use automatic or recommended sensitivity labeling, your users need one of the
 
 - [Azure Information Protection Premium P2](https://azure.microsoft.com/pricing/details/information-protection/) or above
 
-## Support for sensitivity label capabilities in Word, Excel, and PowerPoint
+## Support for built-in sensitivity label capabilities in Word, Excel, and PowerPoint
 
 For each capability, the following table lists the minimum version you need for that app. TBD means that you can't use that capability on that platform.
 
