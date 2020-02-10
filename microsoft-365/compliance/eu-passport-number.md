@@ -1,7 +1,9 @@
 ---
 title: "EU Passport Number"
-ms.author: laurawi
-author: laurawi
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 8/16/2018
 audience: Admin
@@ -352,7 +354,7 @@ For details, see the section "France Passport Number" in [What the sensitive inf
   
 ## Germany
 
-For details, see the section "Germany Passport Number" in [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).
+For details, see the section "German Passport Number" in [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).
   
 ## Greece
 

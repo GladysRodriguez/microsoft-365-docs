@@ -1,5 +1,7 @@
 ---
 title: "Reference Policies, practices, and guidelines"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -68,7 +70,7 @@ Senders, ISP's, and other service providers should actively manage the reputatio
 
 ## Office 365 limits
 
-Senders must adhere to Office 365 limits listed in [Exchange Online Protection Limits](https://technet.microsoft.com/library/exchange-online-protection-limits.aspx).
+Senders must adhere to Office 365 limits listed in [Exchange Online Protection Limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits).
 
 ## Email delivery resources and organizations
 

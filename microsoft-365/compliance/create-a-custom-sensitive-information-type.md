@@ -1,5 +1,7 @@
 ---
 title: "Create a custom sensitive information type in the Security & Compliance Center"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -27,6 +29,9 @@ You can also create custom sensitive information types by using PowerShell and E
 - [Create a custom sensitive information type for DLP with Exact Data Match (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
 ## Before you begin...
+
+> [!NOTE]
+> You should have Global admin or Compliance admin permissions to create, test, and deploy a custom sensitive information type through the UI. See [About admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide) in Office 365.
 
 - Your organization must have a subscription, such as Office 365 Enterprise, that includes Data Loss Prevention (DLP). See [Messaging Policy and Compliance ServiceDescription](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc). 
 

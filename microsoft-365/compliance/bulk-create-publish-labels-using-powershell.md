@@ -1,7 +1,9 @@
 ---
 title: "Bulk create and publish retention labels by using PowerShell"
-ms.author: laurawi
-author: laurawi
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
 ms.date: 
 audience: Admin
 ms.topic: article
@@ -13,14 +15,14 @@ localization_priority: Priority
 search.appverid: 
 - MOE150
 - MET150
-description: "In Office 365, you can use retention labels to implement a retention schedule for your organization. As a record manager or compliance officer, you might have hundreds of retention labels to create and publish. You can do this through the UI in the Security and Compliance Center, but creating retention labels one at a time is time-consuming and inefficient. By using the script and .csv files provided below, you can bulk create and publish retention labels and retention label policies. First you create a list of the retention labels and a list of the retention label policies in Excel, and then you bulk create the retention labels and retention label policies in those lists by using PowerShell. This makes it easier to create and publish at one time, all of the retention labels that your retention schedule requires."
+description: "In Office 365, you can use retention labels to implement a retention schedule for your organization. By using the script and .csv files provided, you can bulk create and publish retention labels and retention label policies by using PowerShell."
 ---
 
 # Bulk create and publish retention labels by using PowerShell
 
 In Office 365, you can use retention labels to implement a retention schedule for your organization. As a record manager or compliance officer, you might have hundreds of retention labels to create and publish. You can do this through the UI in the Security &amp; Compliance Center, but creating retention labels one at a time is time-consuming and inefficient.
   
-By using the script and .csv files provided below, you can bulk create retention labels and publish retention label policies. First you create a list of the retention labels and a list of the retention label policies in Excel, and then you bulk create the retention labels and retention label policies in those lists by using PowerShell. This makes it easier to create and publish at one time, all of the retention labels that your retention schedule requires.
+By using the script and .csv files provided below, you can bulk create retention labels and publish retention label policies. First you create a list of the retention labels and a list of the retention label policies in Excel, and then you use PowerShell to bulk create the retention labels and retention label policies in those lists. This makes it easier to create and publish all of the retention labels that your retention schedule requires at one time.
   
 For more information about retention labels, see [Overview of labels](labels.md).
   
@@ -60,11 +62,11 @@ For more information about the parameter values for this cmdlet, see [New-Retent
   
 Notes:
   
-- If you don't provide a source file for publishing retention labels, the script creates retention labels (see the previous section) but does not publish them.
+- If you don't provide a source file for publishing retention labels, the script creates retention labels (see the previous section) but doesn't publish them.
     
 - If the .csv file contains a retention label policy with the same name as one that already exists, the script skips creating that retention label policy. No duplicate retention label policies are created.
     
-- The script publishes only retention labels that are applied manually to content. This script does not support retention labels that are auto-applied to content.
+- The script publishes only retention labels that are applied manually to content. This script doesn't support retention labels that are auto-applied to content.
     
 - If you change or rename the column headers, the script will fail. The script requires a .csv file in the format provided here.
     
@@ -178,7 +180,7 @@ Function Create-Log
     }
     $date = Get-Date -Format 'MMddyyyy_HHmmss'
     $logfilePath = "$logFolderPath\Log_{0}_{1}.txt" -f $LogFunction, $date
-    Write-Verbose "Log file is writen to: $logfilePath"
+    Write-Verbose "Log file is written to: $logfilePath"
     $logfile = New-Item $logfilePath  -type file
     return $logfilePath
 }
@@ -200,7 +202,7 @@ Function Create-ResultCSV
     }
     $date = Get-Date -Format 'MMddyyyy_HHmmss'
     $retfilePath = "$retFolderPath\Result_{0}_{1}.csv" -f $ResultFunction, $date
-    Write-Verbose "Result file is writen to: $retfilePath"
+    Write-Verbose "Result file is written to: $retfilePath"
     $retfile = New-Item $retfilePath  -type file
     return $retfilePath
 }

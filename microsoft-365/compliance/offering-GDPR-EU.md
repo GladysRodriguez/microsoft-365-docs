@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: General Data Protection Regulation (GDPR)
+# General Data Protection Regulation (GDPR)
 
 ## Learn about GDPR compliance best practices
 
@@ -31,7 +34,7 @@ Discover privacy program best practices and how Microsoft approaches regulations
 
 ### Abrona prepares for GDPR with Microsoft 365
 
-See how Dutch healthcare organization Abrona is using Microsoft technologies such as Compliance Manager and Azure Information Protection to prepare for GDPR.
+See how Dutch healthcare organization Abrona is using Microsoft technologies such as Compliance Score and Azure Information Protection to prepare for GDPR.
 
 [Watch now](https://go.microsoft.com/fwlink/p/?linkid=2048705)
 
@@ -58,13 +61,17 @@ Learn how Microsoft customer INAIL is using Azure Information Protection to clas
 
 [Learn more](offering-iso-27701.md)
 
-### Compliance Manager
+### Compliance Score
 
-Use [Compliance manager](https://go.microsoft.com/fwlink/p/?linkid=2048390) to help perform ongoing risk assessments, get actionable insights, and simplify your compliance processes.
+Use [Compliance Score](compliance-score.md) to help perform ongoing risk assessments, get actionable insights, and simplify your compliance processes.
 
-### Security and Compliance Center
+### Microsoft 365 compliance center
 
-The Microsoft 365 [security & compliance centers](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-and-compliance) lets you discover security and compliance controls.
+The [Microsoft 365 compliance center](microsoft-365-compliance-center.md) lets you discover compliance controls.
+
+### Microsoft 365 security center
+
+The [Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center) lets you discover security controls.
 
 ### Discover Compliance Solutions
 

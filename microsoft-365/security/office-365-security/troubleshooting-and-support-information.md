@@ -1,5 +1,7 @@
 ---
 title: "Troubleshooting and support information"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -81,6 +83,6 @@ If you need help with the installation, configuration, or uninstallation of the 
 
 ## For more information
 
-[Enable the Report Message add-in](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
+[Enable the Report Message add-in](enable-the-report-message-add-in.md)
 
 [Report junk email messages to Microsoft](report-junk-email-messages-to-microsoft.md)

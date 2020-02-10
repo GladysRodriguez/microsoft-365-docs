@@ -1,5 +1,8 @@
 ---
 title: "GDPR for Office Servers"
+description: "Learn about how to address GDPR requirements in Office on-premises servers."
+f1.keywords:
+- NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -7,7 +10,7 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-description: "Learn about how to address GDPR requirements in Office on-premises servers."
+titleSuffix: Microsoft GDPR
 ---
 
 # GDPR for Office on-premises Servers

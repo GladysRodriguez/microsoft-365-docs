@@ -1,5 +1,7 @@
 ---
 title: "Configure end-user spam notifications in Exchange Online"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
@@ -20,29 +22,23 @@ description: "You can configure end-user spam notifications for the default comp
 > [!IMPORTANT]
 > This topic is for Exchange Online customers who are protecting cloud-hosted mailboxes. Exchange Online Protection (EOP) standalone customers who are protecting on-premises mailboxes should read the following topic instead: [Configure end-user spam notifications in EOP](configure-end-user-spam-notifications-in-eop.md). 
   
-You can configure end-user spam notifications for the default company-wide spam filter policy or for custom spam filter policies that are applied to domains. Enabling end-user spam notification messages lets your end users self-manage their own spam-quarantined messages. End-user spam notifications cannot be used with policies applied to users or groups, or to a policy with exceptions.
+You can configure end-user spam notifications for the default company-wide spam filter policy or for custom spam filter policies. Enabling end-user spam notification messages lets your users manage their own spam-quarantined messages. 
   
 End-user spam notifications contain a list of all spam-quarantined messages that the end user has received during a time period that you configure (you can specify a value between 1 and 15 days). You can also configure the language in which the notification message is written.
   
 After receiving a notification message, end users can choose from the following options:
 
-**Preview** the message if you would like to preview the content or header prior to taking action.
+**Block Sender** if you want Office 365 to add the sender to your blocked senders list.
 
-**Download** the message if you would like to review the message and attachments (if any) on your device prior to taking action.
+**Release** if the message isn't spam and you want Office 365 to send the message to your mailbox.
 
-**Release** if the message isn’t spam and you want Office 365 to send the message to your mailbox.
-
-**Release & Allow Sender** if the message isn’t spam and you want Office 365 to add the sender to your safe senders and recipients list for future emails. Keep in mind that your admin may have other organization wide allow/block configurations that override your safe sender list.
-
-**Release & Report**, if the message isn’t spam and you want to send the message to your mailbox and report it to Microsoft for analysis.
-
-**Block** if you want Office 365 to add the sender to your blocked senders list.
+**Review** to navigate to the Quarantine Portal within the Security & Compliance Center if you want to take other actions, such as Preview or Release.
   
 ## What do you need to know before you begin?
 
 Estimated time to complete: 2 minutes
   
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Anti-spam" entry in the [Feature Permissions in Exchange Online](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) topic. 
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Anti-spam" entry in the [Feature Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions) topic. 
   
 For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
   

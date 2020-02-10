@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Payment Card Industry (PCI) Data Security Standard (DSS)
+# Payment Card Industry (PCI) Data Security Standard (DSS)
 
 ## PCI DSS overview
 
@@ -95,4 +98,4 @@ Currently, only files and documents uploaded to OneDrive for Business and ShareP
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/3/7/7/377F1BBC-37D5-4677-AB4A-7C01D089CA67/PCI_DSS_Compliance_Backgrounder.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/3/7/7/377F1BBC-37D5-4677-AB4A-7C01D089CA67/PCI-DSS-Compliance.pdf).

@@ -1,5 +1,7 @@
 ---
 title: "Protect yourself against phishing and other attacks"
+f1.keywords:
+- NOCSH
 ms.author: samanro
 author: samanro
 manager: scotv
@@ -31,7 +33,6 @@ Microsoft 365 includes many protections to guard against attacks, but there are 
 - **Phishing** A phishing scam is an email that seems legitimate but is an attempt to get your personal information or steal your money.
 - **Spoofing** Scammers can also use a technique called spoofing to make it appear as if you've received an email from yourself. 
 - **Malware** is malicious software that can be installed on your computer, usually installed after you've clicked a link or opened a document from an email. There are various types of malware (for example, ransomware, when your computer is taken over), but you don't want to have any of them. 
-
 
 ## Best practices
 
@@ -66,11 +67,9 @@ Download this infographic with tips for you and the members of your campaign tea
 
 [PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)
 
- 
-
 ## Set it up
 
 Learn more about how to:
-- [Keep your files and communications safe with Office](https://support.office.com/article/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f)
-- [Stay secure and private at work](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d)
+- [Keep your files and communications safe with Office](https://support.office.com/article/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f).
+- [Stay secure and private at work](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d).
   

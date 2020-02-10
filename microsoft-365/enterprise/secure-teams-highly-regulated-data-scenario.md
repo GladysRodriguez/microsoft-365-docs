@@ -1,9 +1,11 @@
 ---
 title: "Teams for highly regulated data"
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 11/12/2019
+ms.date: 12/13/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -34,11 +36,15 @@ The elements of configuration for a team for highly regulated data are:
   - Prevents non-members of the site from requesting access to the site.
 - An Office 365 retention label for the underlying SharePoint site that is automatically applied to new files on the site as a default way to define retention policies.
 - A Data Loss Prevention (DLP) policy that uses the retention label and blocks users from sharing or sending files outside the organization.
-- An Office 365 sensitivity label or a sublabel of a highly regulated label that has encryption enabled and Co-Author permissions for the Office 365 group of the team. Users apply the label or sublabel to files stored in **Files** section of the team from the Sensitivity menu bar option in Word, Excel, and PowerPoint.
+- An Office 365 sensitivity label or a sublabel of a highly regulated label that has encryption enabled and Co-Author permissions for the Office 365 group of the team. Users apply the label or sublabel to files stored in **Files** section of the team from the **Sensitivity** menu bar option in Word, Excel, and PowerPoint.
 
 Here is the resulting configuration with a sensitivity label.
 
 ![The secure team scenario configuration](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
+
+For a quick overview, watch this short video.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
 <a name="poster"></a>
 For a 1-page summary of this scenario, see the [Teams for highly regulated data poster](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf).
@@ -210,6 +216,12 @@ In the weeks after training:
   You can see which files have a label assigned by viewing a folder in SharePoint and adding the **Sensitivity** column through the **Show/hide columns** option of **Add column**.
 
 Retrain your users as needed.
+
+## Demonstrate this in a test environment
+
+To build out your own test environment to test teams for sensitive and highly confidential files, see [these instructions](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-team-for-files-in-a-dev-test-environment). 
+
+![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)
 
 ## How the Contoso Corporation used a secure team for a top-secret project
 

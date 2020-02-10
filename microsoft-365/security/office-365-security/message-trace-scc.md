@@ -1,5 +1,7 @@
 ---
 title: "Message trace in the Security & Compliance Center"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -15,25 +17,18 @@ description: "Admins can use message trace in the Security & Compliance Center t
 
 ## Overview
 
-Message trace in the Security & Compliance Center follows email messages as they travel through your Exchange Online organization. You can determine if a message was received, rejected, deferred, or delivered by the service. It also shows what actions were taken on the message before it reached its final status.
+Message trace in the Office 365 Security & Compliance Center follows email messages as they travel through your Exchange Online organization. You can determine if a message was received, rejected, deferred, or delivered by the service. It also shows what actions were taken on the message before it reached its final status.
+
+Message trace in the Security & Compliance Center improves upon the original message trace that was available in the Exchange admin center (EAC). You can use the information from message trace to efficiently answer user questions about what happened to messages, troubleshoot mail flow issues, and validate policy changes.
 
 > [!NOTE]
-> To perform message trace, administrator must be member of Organization Management, Compliance Management or Help Desk role groups.
-
-Message trace in the Security & Compliance Center improves upon message trace that was available in the Exchange admin center (EAC). You can use the information from message trace to efficiently answer user questions about what happened to their messages, troubleshoot mail flow issues, and validate policy changes.
-
-> [!NOTE]
-> Only the first 50000 messages are displayed in the results. The [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) cmdlet in Exchange Online PowerShell or Exchange Online Protection PowerShell returns all messages in the results.
+> • To perform a message trace, you need to be a member of the Organization Management, Compliance Management or Help Desk role groups. For more information, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). <br/><br/>• The maximum number of messages that are displayed in the results depends on the report type you selected (see the [Choose report type](#choose-report-type) section for details). The [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) cmdlet in Exchange Online PowerShell or Exchange Online Protection PowerShell returns all messages in the results.
 
 ## Open message trace
 
-1. [Sign in to Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) with your work or school account.
+1. Open the Office 365 Security & Compliance Center at <https://protection.office.com>.
 
-2. Select the app launcher icon ![Office 365 app launcher icon](../media/0aaa6945-f9a4-4b13-bf5f-d5c5dbe978fb.png) in the upper-left and choose **Admin**.
-
-3. In the lower-left navigation, expand **Admin centers** and select **Security & Compliance**.
-
-4. In the **Security & Compliance** page that opens, expand **Mail flow**, and select **Message trace**.
+2. Expand **Mail flow**, and then select **Message trace**.
 
 ## Message trace page
 
@@ -58,7 +53,7 @@ The default values are **All senders** and **All recipients**, but you can use t
 - **To these people**: Click in this field to select one or more recipients in your organization.
 
 > [!NOTE]
-> You can also type the email addresses of external senders and recipients. Wildcards are supported (for example, `*@contoso.com`), but you can't use multiple wildcard entries in the same field at the same time.<br/>You can paste multiple senders or recipients lists separated by semicolons (`;`). spaces (`\s`), carriage returns (`\r`), or next lines (`\n`).
+> You can also type the email addresses of external senders and recipients. Wildcards are supported (for example, `*@contoso.com`), but you can't use multiple wildcard entries in the same field at the same time. <br/><br/> You can paste multiple senders or recipients lists separated by semicolons (`;`). spaces (`\s`), carriage returns (`\r`), or next lines (`\n`).
 
 ### Time range
 
@@ -66,17 +61,17 @@ The default value is **2 days**, but you can specify date/time ranges of up to 9
 
 - By default, you select the time range in **Slider** view using a time line. You can only select the day or time settings that are displayed. Trying to select an in-between value will snap the start/end bubble to the nearest displayed setting.
 
-   ![A Slider time range in a new message trace in the Security & Compliance Center](../media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
+  ![A Slider time range in a new message trace in the Security & Compliance Center](../media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
 
-   But, you can also switch to **Custom** view where you can specify the **Start date** and **End date** values (including times), and you can also select the **Time zone** for the date/time range. Note that the **Time zone** setting applies to both your query inputs and your query results.
+  But, you can also switch to **Custom** view where you can specify the **Start date** and **End date** values (including times), and you can also select the **Time zone** for the date/time range. Note that the **Time zone** setting applies to both your query inputs and your query results.
 
-   ![A Custom time range in a new message trace in the Security & Compliance Center](../media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
+  ![A Custom time range in a new message trace in the Security & Compliance Center](../media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
 
-   For 10 days or less, the results are available instantly as a **Summary** report. If you specify a time range that's even slightly greater than 10 days, the results will be delayed as they are only available as a downloadable CSV file ( **Enhanced summary** or **Extended** reports).
+  For 10 days or less, the results are available instantly as a **Summary** report. If you specify a time range that's even slightly greater than 10 days, the results will be delayed as they are only available as a downloadable CSV file ( **Enhanced summary** or **Extended** reports).
 
-   For more information about the different report types, see the [Choose report type](#choose-report-type) section in this topic.
+  For more information about the different report types, see the [Choose report type](#choose-report-type) section in this topic.
 
-   **Note**: Enhanced summary and Extended reports are prepared using archived message trace data, and it can take up to several hours before your report is available for download. Depending on how many other admins have also submitted report requests around the same time, you might also notice a delay before processing starts for your queued request.
+  **Note**: Enhanced summary and Extended reports are prepared using archived message trace data, and it can take up to several hours before your report is available for download. Depending on how many other admins have also submitted report requests around the same time, you might also notice a delay before processing starts for your queued request.
 
 - Saving a query in **Slider** view saves the relative time range (for example, 3 days from today). Saving a query in **Custom** view saves the absolute date/time range (for example, 2018-05-06 13:00 to 2018-05-08 18:00).
 
@@ -94,7 +89,7 @@ You can leave the default value **All** selected, or you can select one of the f
 
 - **Failed**: The message was not delivered.
 
-- **Quarantined**: The message was quarantined (as spam, bulk mail, or phishing). For more information, see [Quarantine email messages in Office 365](https://support.office.com/article/4c234874-015e-4768-8495-98fcccfc639b.aspx).
+- **Quarantined**: The message was quarantined (as spam, bulk mail, or phishing). For more information, see [Quarantine email messages in Office 365](quarantine-email-messages.md).
 
 - **Filtered as spam**: The message was identified spam, and was rejected or blocked (not quarantined).
 
@@ -124,9 +119,9 @@ You can filer the results by client IP address to investigate hacked computers t
 
 The available report types are:
 
-- **Summary**: Available if the time range is less than 10 days, and requires no additional filtering options. The results are available almost immediately after you click **Search**.
+- **Summary**: Available if the time range is less than 10 days, and requires no additional filtering options. The results are available almost immediately after you click **Search**. The report returns up to 20000 results.
 
-- **Enhanced summary** or **Extended**: These reports are only available as downloadable CSV files, and require one or more of the following filtering options regardless of the time range: **By these people**, **To these people**, or **Message ID**. You can use wildcards for the senders or the recipients (for example, \*@contoso.com).
+- **Enhanced summary** or **Extended**: These reports are only available as downloadable CSV files, and require one or more of the following filtering options regardless of the time range: **By these people**, **To these people**, or **Message ID**. You can use wildcards for the senders or the recipients (for example, \*@contoso.com). The Enhanced summary report returns up to 50000 results. The Extended report returns up to 1000 results.
 
 **Notes**:
 
@@ -336,13 +331,13 @@ A **custom_data** value that starts with `S:SFA` is from the spam filter agent. 
 |`SFV=SPM`|The message was marked as spam by the content filter.|
 |`SFV=BLK`|Filtering was skipped and the message was blocked because it originated from a blocked sender.|
 |`SFV=SKS`|The message was marked as spam prior to being processed by the content filter. This includes messages where the message matched a Transport rule to automatically mark it as spam and bypass all additional filtering.|
-|`SCL=<number>`|For more information about the different SCL values and what they mean, see [Spam confidence levels](https://technet.microsoft.com/library/jj200686.aspx).|
-|`PCL=<number>`|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam confidence levels](https://technet.microsoft.com/library/jj200686.aspx).|
+|`SCL=<number>`|For more information about the different SCL values and what they mean, see [Spam confidence levels](spam-confidence-levels.md).|
+|`PCL=<number>`|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam confidence levels](spam-confidence-levels.md).|
 |`DI=SB`|The sender of the message was blocked.|
 |`DI=SQ`|The message was quarantined.|
 |`DI=SD`|The message was deleted.|
 |`DI=SJ`|The message was sent to the recipient's Junk Email folder.|
-|`DI=SN`|The message was routed through the higher risk delivery pool. For more information, see [High-risk delivery pool for outbound messages](https://technet.microsoft.com/library/jj200746.aspx).|
+|`DI=SN`|The message was routed through the higher risk delivery pool. For more information, see [High-risk delivery pool for outbound messages](high-risk-delivery-pool-for-outbound-messages.md).|
 |`DI=SO`|The message was routed through the normal outbound delivery pool.|
 |`SFS=[a]|SFS=[b]`|This denotes that spam rules were matched.|
 |`IPV=CAL`|The message was allowed through the spam filters because the IP address was specified in an IP Allow list in the connection filter.|
@@ -384,7 +379,7 @@ A **custom_data** value that starts with`S:TRA` is from the Transport Rule agent
 |:-----|:-----|
 |`ETR|ruleId=<guid>`|The rule ID that was matched.|
 |`St=<datetime>`|The date and time in UTC when the rule match occurred.|
-|`Action=<ActionDefinition>`|The action that was applied. For a list of available actions, see [Mail flow rule actions in Exchange Online](https://technet.microsoft.com/library/jj919237.aspx).|
+|`Action=<ActionDefinition>`|The action that was applied. For a list of available actions, see [Mail flow rule actions in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
 |`Mode=<Mode>`|The mode of the rule. Valid values are: <br/>• **Enforce**: All actions on the rule will be enforced. <br/>• **Test with Policy Tips:**: Any Policy Tip actions will be sent, but other enforcement actions will not be acted on. <br/>• **Test without Policy Tips**: Actions will be listed in a log file, but senders will not be notified in any way, and enforcement actions will not be acted on.|
 
 An example **custom_data** value for a messages that matches the conditions of a mail flow rule looks like this:

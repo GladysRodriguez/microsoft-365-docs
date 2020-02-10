@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Financial Industry Regulatory Authority (FINRA) Rule 4511(c) United States
+# Financial Industry Regulatory Authority (FINRA) Rule 4511(c) United States
 
 ## About FINRA Rule 4511
 
@@ -46,7 +49,7 @@ Archiving in Office 365 helps preserve a wide range of data, including email, vo
 ## Microsoft in-scope cloud services
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
-- [Office 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9f756cce-b15d-45a9-94d7-6a583dee4401&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
+- [Office 365](https://aka.ms/Office365ComplianceOfferings)
 
 ## Audits, reports, and certificates
 
@@ -62,9 +65,7 @@ Archiving in Office 365 helps preserve a wide range of data, including email, vo
 
 - **Financial services regulation**: Compliance map of key US regulatory principles for cloud computing and Microsoft online services. [Learn more](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 - **Risk Assessment & Compliance Guide**: Create a governance model for risk assessment of Microsoft cloud services, and regulator notification. [Learn more](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
-- **Financial use cases**: Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
-
-[Learn more](https://docs.microsoft.com/azure/industry/financial/)
+- **Financial use cases**: Use case overviews, tutorials, and other resources to build Azure solutions for financial services. [Learn more](https://docs.microsoft.com/azure/industry/financial/)
 
 ## Resources
 

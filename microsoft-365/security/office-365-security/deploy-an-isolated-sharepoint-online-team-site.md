@@ -1,5 +1,7 @@
 ---
 title: "Deploy an isolated SharePoint Online team site"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -109,10 +111,6 @@ $userUPN="<UPN of the user account>"
 $grpName="<display name of the access group>"
 Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
 ```
-
-> [!TIP]
-> For a text file that contains all the PowerShell commands and an Excel configuration worksheet that generates PowerShell commands based on your group and user account names, download the [Isolated SharePoint Online Team Site Deployment Kit](https://gallery.technet.microsoft.com/Isolated-SharePoint-Online-0b364907). 
-  
 If you stored the UPNs of user accounts for any of the access groups in a text file, you can use the following PowerShell command block to add them all at one time:
   
 ```powershell
@@ -156,7 +154,7 @@ In this phase, you create the isolated SharePoint Online site and configure the 
   
 First, create the SharePoint Online team site with these steps.
   
-1. Sign in to the admin center with an account that will also be used to administer the SharePoint Online team site (a SharePoint Online administrator). For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Sign in to the admin center with an account that will also be used to administer the SharePoint Online team site (a SharePoint Online administrator). For help, see [Where to sign in to Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. In the list of tiles, click **SharePoint**.
     

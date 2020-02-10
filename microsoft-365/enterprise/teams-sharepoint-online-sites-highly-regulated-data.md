@@ -1,6 +1,8 @@
 ---
 title: "SharePoint sites for highly regulated data"
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/31/2019
@@ -11,6 +13,7 @@ localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom:
 
 description: Create a secure SharePoint team site to store your most valuable and sensitive files.

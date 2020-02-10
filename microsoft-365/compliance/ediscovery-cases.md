@@ -1,5 +1,7 @@
 ---
-title: "eDiscovery cases in the Security & Compliance Center"
+title: "Manage eDiscovery cases in the Security & Compliance Center"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
-description: "Use the Security & Compliance Center to create and manage eDiscovery cases in your organization. You can assign members to the case, place content locations on hold, run Content Searches associated with the case, and the export the search results. You can also prepare case data for further analysis in Advanced eDiscovery."
+description: "Use the Security & Compliance Center to create and manage eDiscovery cases in your organization. You can assign members to the case, place content locations on hold, run Content Searches associated with the case, and the export the search results. You can also prepare case data for further analysis in Office 365 Advanced eDiscovery."
 ---
 
-# eDiscovery cases in the Security & Compliance Center
+# Manage eDiscovery cases in the Security & Compliance Center
 
 You can use eDiscovery cases in the compliance center in Office 365 and Microsoft 365 to control who can create, access, and manage eDiscovery cases in your organization. If your organization has an Office 365 E5 subscription, you can also use eDiscovery cases to analyze search results by using Office 365 Advanced eDiscovery.
   
 An eDiscovery case allows you to add members to a case, control what types of actions that specific case members can perform, place a hold on content locations relevant to a legal case, and associate multiple Content Searches with a single case. You can also export the results of any Content Search that is associated with a case or prepare search results for analysis in Advanced eDiscovery. eDiscovery cases are a good way to limit who has access to Content Searches and search results for a specific legal case in your organization.
   
-Use the following workflow to set up and use eDiscovery cases in the Security & Compliance Center and Advanced eDiscovery.
+Use the following workflow to set-up and use eDiscovery cases in the Security & Compliance Center and Advanced eDiscovery.
 
 [Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
@@ -52,7 +54,10 @@ Use the following workflow to set up and use eDiscovery cases in the Security & 
 
 The first step is to assign the appropriate eDiscovery-related permissions to people so you can add them to an eDiscovery case in Step 2. You have to be a member of the Organization Management role group (or be assigned the Role Management role) in the Security & Compliance Center to assign eDiscovery permissions. The following list describes the eDiscovery-related role groups in the Security & Compliance Center. 
   
-- **Reviewer.** This role group has the most restrictive eDiscovery-related permissions. The primary purpose of this role group is to allow members to view and access case data in Office 365 Advanced eDiscovery. Members of this group can only see and open the list of the cases on the **eDiscovery** page in the Security & Compliance Center that they are members of. After the user accesses a case in the security and compliance center, they can click **Switch to Advanced eDiscovery** to access and analyze the case data in Advanced eDiscovery. They can't create cases, add members to a case, create holds, create searches, preview search results, export search results, or prepare results for Advanced eDiscovery. 
+- **Reviewer.** This role group has the most restrictive eDiscovery-related permissions. The primary purpose of this role group is to allow members to view and access case data in [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md) (also known as *Advanced eDiscovery v1*). Members of this group can only see and open the list of the cases on the **eDiscovery** page in the Security & Compliance Center that they are members of. After the user accesses a case in the security and compliance center, they can click **Switch to Advanced eDiscovery** to access and analyze the case data in Advanced eDiscovery. They can't create cases, add members to a case, create holds, create searches, preview search results, export search results, or prepare results for Advanced eDiscovery. 
+
+   > [!NOTE]
+   > At this time, users who are member of the Reviewer role group can't access data in [Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md) (also known as *Advanced eDiscovery v2*). To add members to a case in Advanced eDiscovery v2 so that they can review case data, a user must be a member of the eDiscovery Manager role group.
     
 - **eDiscovery Manager.** Members of this role group can create and manage eDiscovery cases. They can add and remove members, place content locations on hold, create and edit Content Searches associated with a case, export the results of a Content Search, and prepare search results for analysis in Advanced eDiscovery. There are two subgroups in this role group. The difference between these subgroups is based on scope.
     
@@ -87,7 +92,7 @@ For more information about eDiscovery permissions, see [Assign eDiscovery permis
     
     - To assign eDiscovery Administrator permissions, select the **eDiscovery Manager** role group, and then next to **eDiscovery Administrator**, click **Edit**. Click **Choose eDiscovery Administrator**, click **Edit**, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add**, select the user that you want to add as an eDiscovery Administrator, and then click **Add**.
     
-4. After you've added all the users, click **Done**, click **Save** to save the changes to the role group, and then click **Close**.
+4. After you have added all the users, click **Done**, click **Save** to save the changes to the role group, and then click **Close**.
 
 ## Step 2: Create a new case
 
@@ -132,7 +137,7 @@ After you create a case, the next step is to add members to the case. As previou
     > [!TIP]
     > If you have a large list of people who can added as members, use the **Search** box to search for a specific person in the list. 
   
-5. After you've selected the people or role groups to add as members of the group, click **Add**.
+5. After you have selected the people or role groups to add as members of the group, click **Add**.
     
     In **Manage this case**, click **Save** to save the new list of case members. 
     
@@ -140,7 +145,7 @@ After you create a case, the next step is to add members to the case. As previou
   
 ## Step 4: Place content locations on hold
 
-You can use an eDiscovery case to create holds to preserve content that might be relevant to the case. You can place a hold on the mailboxes and OneDrive for Business sites of people who are custodians in the case. You can also place a hold on the group mailbox, SharePoint site, and OneDrive for Business site for an Office 365 Group. Similarly, you can place a hold on the mailbox and site that are associated with Microsoft Teams. When you place content locations on hold, content is held until you remove the hold from the content location or until you delete the hold.
+You can use an eDiscovery case to create holds to preserve content that might be relevant to the case. You can place a hold on the mailboxes and OneDrive for Business sites of people who are custodians in the case. You can also place a hold on the group mailbox, SharePoint site, and OneDrive for Business site for an Office 365 Group. Similarly, you can place a hold on the mailboxes and sites that are associated with Microsoft Teams or Yammer Groups. When you place content locations on hold, content is held until you remove the hold from the content location or until you delete the hold.
 
 > [!NOTE]
 > After you place a content location on hold, it takes up to 24 hours for the hold to take effect. 
@@ -178,14 +183,14 @@ To create a hold for an eDiscovery case:
     
     ![Choose the content locations to place on hold](media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
   
-   a. **Exchange email.** Click **Choose users, groups, or teams** and then click **Choose users, groups, or teams** again. to specify mailboxes to place on hold. Use the search box to find user mailboxes and distribution groups (to place a hold on the mailboxes of group members) to place on hold. You can also place a hold on the associated mailbox for an Office 365 Group or a Microsoft Team. Select the user, group, team check box, click **Choose**, and then click **Done**.
+   a. **Exchange email** - Click **Choose users, groups, or teams** and then click **Choose users, groups, or teams** again. to specify mailboxes to place on hold. Use the search box to find user mailboxes and distribution groups (to place a hold on the mailboxes of group members) to place on hold. You can also place a hold on the associated mailbox for a Microsoft Team, a Yammer Group, or an Office 365 Group. Select the user, group, team check box, click **Choose**, and then click **Done**.
     
     > [!NOTE]
     > When you click **Choose users, groups, or teams** to specify mailboxes to place on hold, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add people to this list, type a name (a minimum of 3 characters) in the search box. 
-  
-   b. **SharePoint Sites.** Click **Choose sites** and then click **Choose sites** again to specify SharePoint and OneDrive for Business sites to place on hold. Type the URL for each site that you want to place on hold. You can also add the URL for the SharePoint site for an Office 365 Group or a Microsoft Team. Click **Choose**, and then click **Done**.
+
+   b. **SharePoint sites** - Click **Choose sites** and then click **Choose sites** again to specify SharePoint and OneDrive for Business sites to place on hold. Type the URL for each site that you want to place on hold. You can also add the URL for the SharePoint site for a Microsoft Team, a Yammer Group, or a, Office 365 Group. Click **Choose**, and then click **Done**.
     
-    See the [More information](#more-information) section for tips on putting Office 365 Groups and Microsoft Teams on hold. 
+    See the [More information](#more-information) section for tips on putting Microsoft Teams, Yammer Groups, and Office 365 Groups on hold. 
     
     > [!NOTE]
     > In the rare case that a person's user principal name (UPN) is changed, the URL for their OneDrive account will also be changed to incorporate the new UPN. If this happens, you'll have to modify the hold by adding the user's new OneDrive URL and removing the old one. 
@@ -264,7 +269,7 @@ After an eDiscovery case is created and any custodians related to the case are p
     
     ![Locations, locations on hold](media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
   
-    - **All locations.** Select this option to search all content locations in your organization. When you select this option, you can choose to search all Exchange mailboxes (which includes the mailboxes for all Office 365 Groups and Microsoft Teams), all SharePoint and OneDrive for Business sites (which includes the sites for all Office 365 Groups and Microsoft Teams), and all public folders.
+    - **All locations** - Select this option to search all content locations in your organization. When you select this option, you can choose to search all Exchange mailboxes (which includes the mailboxes for all Microsoft Teams, Yammer Groups, and Office 365 Groups), all SharePoint and OneDrive for Business sites (which includes the sites for all Microsoft Teams, Yammer Groups, and Office 365 Groups), and all public folders.
     
     - **All locations on hold.** Select this option to search all the content locations that have been placed on hold in the case. If the case contains multiple holds, the content locations from all holds will be searched when you select this option. Additionally, if a content location was placed on a query-based hold, only the items that are on hold will be searched when you run the content search that you're creating in this step. For example, if a user was placed on query-based case hold that preserves items that were sent or created before a specific date, only those items would be searched by using the search criteria of the content search. This is accomplished by connecting the case hold query and the content search query by an **AND** operator. See the [More information](#more-information) section at the end of this article for more details about searching case content. 
     
@@ -280,9 +285,9 @@ After an eDiscovery case is created and any custodians related to the case are p
     
       - When you click **Choose users, groups, or teams** to specify mailboxes to search, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add recipients to this list, click **Choose users, groups, or teams**, type a name (a minimum of 3 characters) in the search box, select the check box next to the name, and then click **Choose**. 
     
-      - You can add inactive mailboxes, Office 365 Groups, Microsoft Teams, and distribution groups to the list of mailboxes to search. Dynamic distribution groups aren't supported. If you add Office 365 Groups or Microsoft Teams, the group or team mailbox is searched. The mailboxes of the group members aren't searched.
+      - You can add inactive mailboxes, Microsoft Teams, Yammer Groups, Office 365 Groups, and distribution groups to the list of mailboxes to search. Dynamic distribution groups aren't supported. If you add Microsoft Teams, Yammer Groups, or Office 365 Groups, the group or team mailbox is searched; the mailboxes of the group members aren't searched.
     
-      - To add sites click **Choose sites**, click **Choose sites** again, and then type the URL for each site that you want to search. You can also add the URL for the SharePoint site for Office 365 Groups and Microsoft Teams. 
+      - To add sites click **Choose sites**, click **Choose sites** again, and then type the URL for each site that you want to search. You can also add the URL for the SharePoint site for a Microsoft Team, a Yammer Group, or an Office 365 Group. 
     
 10. After you select the content locations to search, click **Done** and then click **Save**.
     
@@ -511,6 +516,30 @@ When you reopen a case, any holds that were in place when the case was closed wo
     
     When the process is complete, the status of the case is changed to **Active** on the **eDiscovery** page. 
   
+## (Optional) Step 11: Delete a case
+
+You can also delete active and closed cases. When you delete a case all searches and exports in the case are deleted, and it's removed from the list of cases on the **eDiscovery** page in the Security & Compliance Center. You can't re-open a deleted case. 
+
+Before you can delete a case (whether it's active or closed), you must first delete *all* holds associated with the case. That includes deleting holds with a status of **Off**. 
+
+To delete a hold:
+
+1. Go the **Holds** tab in case that you want to delete.
+
+2. Click the hold that you want to delete.
+
+3. On the flyout page, click **Delete hold**.
+
+To delete a case:
+
+1. In the Security & Compliance Center, click **eDiscovery** \> **eDiscovery** to display the list of cases in your organization. 
+    
+2. Click the name of the case that you want to delete.
+
+3. Under **Manage case status** on the flyout page, click **Delete case**.
+
+If the case you're trying to delete still contains holds, you'll receive an error message. You'll have to delete all holds associated with the case and then try again to delete the case.
+
 ## More information
 
 - **Are there any limits for eDiscovery cases or holds associated with an eDiscovery case?** The following table lists the limits for eDiscovery cases and case holds.
@@ -550,7 +579,7 @@ When you reopen a case, any holds that were in place when the case was closed wo
     
 - **If a mailbox, SharePoint site, or OneDrive account that is on hold is moved to a different region in a multi-geo environment, will the hold still apply?** In all cases, the content in a mailbox, site, or OneDrive account will still be retained. However, the hold statistics will no longer include items from a content location that's been moved to a different region. To include hold statistics for a content location that's been moved, you have to edit the hold and update the URL (or SMTP address of a mailbox) so that the content location is once again included in the hold statistics. 
     
-- **What about placing a hold on Office 365 Groups and Microsoft Teams?** Microsoft Teams are built on Office 365 Groups. Therefore, placing them on hold in an eDiscovery case is similar. Keep the following things in mind when placing Office 365 Groups and Microsoft Teams on hold. 
+- **What about placing a hold on Office 365 Groups and Microsoft Teams?** Microsoft Teams is built on Office 365 Groups. Therefore, placing them on hold in an eDiscovery case is similar. Keep the following things in mind when placing Office 365 Groups and Microsoft Teams on hold. 
     
   - To place content located in Office 365 Groups and Microsoft Teams on hold, you have to specify the mailbox and SharePoint site that associated with a group or team.
     
@@ -590,7 +619,5 @@ When you reopen a case, any holds that were in place when the case was closed wo
     
     > [!NOTE]
     > The capability to retain Wiki content for a Microsoft Team or team channel (when you place the team's SharePoint site on hold) was released on June 22, 2017. If a team site is on hold, the Wiki content will be retained starting on that date. However, if a team site is on hold and the Wiki content was deleted before June 22, 2017, the Wiki content was not retained. 
-  
-  - When you place a hold on a Microsoft Team, the hold doesn't apply to private channel messages. Only messages in standard channels are preserved. Support for preserving private channel messages is coming soon.
 
 - **How do I find the URL for OneDrive for Business sites?** To collect a list of the URLs for the OneDrive for Business sites in your organization so you can add them to a hold or search associated with an eDiscovery case, see [Create a list of all OneDrive locations in your organization](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a). This script in this article creates a text file that contains a list of all OneDrive sites. To run this script, you have to install and use the SharePoint Online Management Shell. Be sure to append the URL for your organization's MySite domain to each OneDrive site that you want to search. This is the domain that contains all your OneDrive; for example,  `https://contoso-my.sharepoint.com`. Here's an example of a URL for a user's OneDrive site:  `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.

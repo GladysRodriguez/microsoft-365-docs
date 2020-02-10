@@ -1,7 +1,9 @@
 ---
 title: "Overview of document deletion policies"
-ms.author: laurawi
-author: laurawi
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 
 audience: Admin

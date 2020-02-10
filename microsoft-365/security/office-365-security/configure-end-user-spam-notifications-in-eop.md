@@ -1,5 +1,7 @@
 ---
 title: "Configure end-user spam notifications in EOP"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
@@ -20,13 +22,15 @@ description: "You can configure end-user spam notifications for the default comp
 > [!IMPORTANT]
 > This topic is for Exchange Online Protection (EOP) standalone customers who are protecting on-premises mailboxes. Exchange Online customers who are protecting cloud-hosted mailboxes should read the following topic instead: [Configure end-user spam notifications in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
   
-You can configure end-user spam notifications for the default company-wide content filter policy or for custom content filter policies that are applied to domains. Enabling end-user spam notification messages lets your end users self-manage their own spam-quarantined messages. End-user spam notifications cannot be used with policies applied to users or groups, or to a policy with exceptions.
+You can configure end-user spam notifications for the default company-wide spam filter policy or for custom spam filter policies. Enabling end-user spam notification messages lets your users manage their own spam-quarantined messages. 
   
 End-user spam notifications contain a list of all spam-quarantined messages that the end user has received during a time period that you configure (you can specify a value between 1 and 15 days). You can also configure the language in which the notification message is written.
   
 After receiving a notification message, end users can choose from the following options:
 
 **Block Sender** if you want Office 365 to add the sender to your blocked senders list.
+
+**Release** if the message isn't spam and you want Office 365 to send the message to your mailbox.
 
 **Review** to navigate to the Quarantine Portal within the Security and Compliance Center if you want to take other actions, such as Preview or Release.
   

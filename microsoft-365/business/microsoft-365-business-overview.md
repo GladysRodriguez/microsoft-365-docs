@@ -1,5 +1,7 @@
 ---
 title: "Overview of Microsoft 365 Business"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -11,12 +13,15 @@ localization_priority: Normal
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
+- TRN_SMB
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- TRN_M365B
+- OKR_SMB_Videos
 search.appverid:
 - BCS160
 - MET150
@@ -29,10 +34,16 @@ description: "Learn more about Microsoft 365 Business."
 ## What is Microsoft 365 Business
 
 Microsoft 365 Business is a subscription service that includes Office 365 productivity tools plus advanced capabilities to help protect your business against cyberthreats, protect your data, and manage devices.
+
+Watch this video for a quick overview of Microsoft 365 Business.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816). 
+
 Microsoft 365 Business is meant for up to 300 licenses. If you need more licenses, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) documentation for more information.
 
-See [Microsoft 365 Business service description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) for the entire list of features.
+See the [Microsoft 365 Business service description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) for the entire list of features.
   
 ## Small business security needs
 
@@ -85,7 +96,7 @@ Your **devices are secured** by:
 
 - Using simplified controls to manage policies for all the Windows 10 PCs in your company, enforcing BitLocker encryption and automatically installing critical Windows updates (Enforce Windows update policies).
 
-To see the full list of security features, see [Microsoft 365 Business security features](security-features.md). After you [Set up Microsoft 365 Business](set-up.md), see [Set up advanced security policies](set-up-advanced-security.md) to get started with the security features that aren't included as a part of the guided setup. Read also [Top 10 ways to secure Office 365 and Microsoft 365 Business plans](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) for a good overview on how to set up protections against cyber criminals and hackers.
+To see the full list of security features, see [Microsoft 365 Business security features](security-features.md). After you [Set up Microsoft 365 Business](set-up.md), see [increase threat protection](increase-threat-protection.md) and [set up compliance features](set-up-compliance.md) to get started with the security features that aren't included as a part of the guided setup. Read also [Top 10 ways to secure Office 365 and Microsoft 365 Business plans](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) for a good overview on how to set up protections against cyber criminals and hackers.
 
 ## Get Microsoft 365 Business
 
@@ -97,3 +108,7 @@ To see the full list of security features, see [Microsoft 365 Business security 
 
     > [!NOTE]
     > This link is for stores in U.S. only
+
+## See also
+
+[Microsoft 365 Business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -1,6 +1,8 @@
 ---
 title: "Empower remote workers"
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/24/2019
@@ -26,7 +28,7 @@ Remote working, also known as teleworking, can span a spectrum that includes:
 
 - Employees that are occasionally away from the office for conferences or client meetings.
 - Some employees that work remotely full-time.
-- A fully remote organization in which tHere's no office and all employees are remote.
+- A fully remote organization in which there is no office and all employees are remote.
 
 To support remote workers, a combination of features in Microsoft 365 Enterprise enables your remote workers in a highly collaborative way, such as:
 

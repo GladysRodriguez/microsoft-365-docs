@@ -1,9 +1,11 @@
 ---
 title: "Office 365 Message Encryption FAQ"
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 11/14/2019
+ms.date: 12/03/2019
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -64,10 +66,10 @@ The new capabilities for Office 365 Message Encryption are an evolution of the e
 
 |**Capability**|**Previous versions of OME**|**IRM**|**New OME capabilities**|
 |:-----|:-----|:-----|:-----|
-|**Sending an encrypted email**|Only through Exchange mail flow rules|End-user initiated from Outlook for PC, Outlook for Mac, or Outlook on the web; or through Exchange mail flow rules|End-user initiated from Outlook for PC, Outlook for Mac, or Outlook on the web; or through mail flow rules|
+|**Sending an encrypted email**|Only through Exchange mail flow rules|End-user initiated from Outlook for Windows, Outlook for Mac, or Outlook on the web; or through Exchange mail flow rules|End-user initiated from Outlook for Windows, Outlook for Mac, or Outlook on the web; or through mail flow rules|
 |**Rights management**|-|Do Not Forward option and custom templates|Do Not Forward option, encrypt-only option, default and custom templates|
 |**Supported recipient type**|External recipients only|Internal recipients only|Internal and external recipients|
-|**Experience for recipient**|External recipients received an HTML message that they downloaded and opened in a browser or downloaded mobile app.|Internal recipients only received encrypted email in Outlook for PC, Outlook for Mac, and Outlook on the web.|Internal and external recipients receive email in Outlook for PC, Outlook for Mac, Outlook on the web, Outlook for Android, and Outlook for iOS, or through a web portal, regardless of whether or not they are in the same Office 365 organization or in any Office 365 organization. The OME portal requires no separate download.|
+|**Experience for recipient**|External recipients received an HTML message that they downloaded and opened in a browser or downloaded mobile app.|Internal recipients only received encrypted email in Outlook for Windows, Outlook for Mac, and Outlook on the web.|Internal and external recipients receive email in Outlook for Windows, Outlook for Mac, Outlook on the web, Outlook for Android, and Outlook for iOS, or through a web portal, regardless of whether or not they are in the same Office 365 organization or in any Office 365 organization. The OME portal requires no separate download.|
 |**Bring Your Own Key support**|Not available|Not available| BYOK supported|
 
 ## How do I enable the new OME capabilities for my organization?
@@ -80,7 +82,7 @@ You can still use the previous version of OME, it will not be deprecated at this
   
 ## My organization uses Active Directory Rights Management, can I use this functionality?
 
-No. If you are using Exchange Online with Active Directory Rights Management service (AD RMS), you can't enable these new capabilities right away. Instead, you need to [migrate AD RMS to Azure Information Protection](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) first. 
+No. If you are using Exchange Online with Active Directory Rights Management service (AD RMS), you can't enable these new capabilities right away. Instead, you need to [migrate AD RMS to Azure Information Protection](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) first.
   
 ## My organization has an Exchange Hybrid deployment. Can I use this feature?
 
@@ -88,11 +90,11 @@ On-premises users can send encrypted mail using Exchange Online mail flow rules.
   
 ## What email client do I need to use in order to create an OME encrypted message? What applications are supported for sending protected messages?
 
-You can create protected messages from Outlook 2016, and Outlook 2013 for PC and Mac, and from Outlook on the web.
+You can create protected messages from Outlook 2016, and Outlook 2013 for Windows and Mac, and from Outlook on the web.
   
 ## What email clients are supported to read and reply to protected emails?
 
-You can read and respond from Outlook for PC and Mac (2013 and 2016), Outlook on the web, and Outlook mobile (Android and iOS) if you are an Office 365 user. You can also use the iOS native mail client if your organization allows it. If you are a non-Office 365 user, you can read and reply to encrypted messages on the web through your web browser.
+Office 365 users can read and respond from Outlook for Windows and Mac (2013 and 2016), Outlook on the web, and Outlook mobile (Android and iOS). You can also use the iOS native mail client if your organization allows it. If you are a non-Office 365 user, you can read and reply to encrypted messages on the web through your web browser.
   
 ## What file types are supported as attachments in protected emails? Do attachments inherit the protection policies associated with protected emails?
 
@@ -114,6 +116,10 @@ PDF encryption allows you to protect sensitive PDF documents through secure comm
 
 Not yet. OneDrive for Business attachments are not supported and end-users can't encrypt a mail that contains a cloud OneDrive for Business attachment.
   
+## What email clients support preview of encrypted attachments in protected emails?
+
+When attachments are protected with a protected mail, Outlook clients provide tha ability to preview the document directly. Outlook supports preview of Office documents (Docx, xlsx, pptx, doc, xls, ppt). Outlook on the web supports preview of Office documents (docx, xlsx, pptx) and PDF.  
+
 ## Can I automatically encrypt messages by setting up policies?
 
 Yes. Use mail flow rules in Exchange Online to automatically encrypt a message based on certain conditions. For example, you can create policies that are based on recipient ID, recipient domain, or on the content in the body or subject of the message. See [Define mail flow rules to encrypt email messages in Office 365](define-mail-flow-rules-to-encrypt-email.md).
@@ -126,21 +132,13 @@ Admins can set up a mail flow rule to remove encryption for outgoing mail. You c
 
 Yes! You can set up mail flow rules in Exchange Online or by using DLP in the Security &amp; Compliance Center.
   
-## Can I open encrypted messages sent to a Shared Mailbox?
-
-Yes! Encrypted messages are supported for a Shared Mailbox. Some limitations apply.
-
-## Is delegated access supported?
-
-Not at this time.
-
 ## Can I customize encrypted messages with my company branding?
 
 Yes! For information on customizing email messages and the OME portal, see Add your organization's brand to your encrypted messages. See [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
   
 ## Are there any reporting capabilities or insights for encrypted emails?
 
-There is an Encryption report in the Security and Compliance Center. See [View email security reports in the Security & Compliance Center](view-email-security-reports.md).
+There is an Encryption report in the Security and Compliance Center. See [View email security reports in the Security & Compliance Center](../security/office-365-security/view-email-security-reports.md).
   
 ## Can I use message encryption with compliance features such as eDiscovery?
 
@@ -149,3 +147,32 @@ Yes. All encrypted email messages are discoverable by Office 365 compliance feat
 ## Can I remove encryption from email?
 
 Admins can set up a mail flow rule to remove encryption from outgoing mail. You can't remove encryption using a mail flow rule from incoming messages.
+
+## Is delegated access supported?
+
+Not at this time.
+
+## Can I open encrypted messages sent to a shared mailbox?
+
+Yes! Encrypted messages are supported for a shared mailbox.
+
+- Users can open protected mails in a shared mMailbox where the shared mailbox received a protected mail as part of a distribution group.
+
+- Users can view attachments that inherit protection from email when they use Outlook for Windows, Outlook for Mac, and Outlook on the web.
+
+The following table lists the supported clients for shared mailboxes.
+
+| Platform | Read mail | View email attachments |
+|----------|-----------|------------------------|
+| Outlook on the web | Yes | Yes                |
+| Outlook for Windows| Yes | Yes                |
+| Outlook for Mac    | Yes | Yes                |
+| Outlook for Android| Yes | No                 |
+| Outlook for iOS    | Yes | No                 |
+|
+
+There are currently two known limitations:
+
+- We only support access provided by direct user assignment to the shared mailbox. We don't support assignment through an email enabled security group.
+
+- You can't open attachments to emails that you receive on mobile devices by using Outlook mobile.

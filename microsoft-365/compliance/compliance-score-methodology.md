@@ -1,5 +1,7 @@
 ---
 title: "Compliance Score calculation"
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -14,7 +16,7 @@ search.appverid:
 description: "Understand how Microsoft Compliance Score calculates a personalized score based on actions taken to address risks and improve your compliance posture."
 ---
 
-# Microsoft Compliance Score calculation (Preview)
+# Microsoft Compliance Score (Preview) calculation
 
 > [!IMPORTANT]
 > Compliance Score does not express an absolute measure of organizational compliance with any particular standard or regulation. It expresses the extent to which you have adopted controls which can reduce the risks to personal data and individual privacy. Recommendations from Compliance Score and Compliance Manager should not be interpreted as a guarantee of compliance. This service is currently in preview and is subject to the terms and conditions in the [Online Services Terms](https://go.microsoft.com/fwlink/?linkid=2108910).
@@ -38,11 +40,13 @@ Compliance Score gives you an out-of-the-box score based on the Microsoft 365 da
 
 ## How Compliance Score continuously assesses controls
 
-Compliance Score automatically scans through your Microsoft 365 environment and detects your system settings, continuously and automatically updating your technical control status. For example, if you turned on multi-factor authentication (MFA) in the Azure AD portal, Compliance Score detects the setting and reflects that in the control access solution details. Conversely, if you didn’t turn on MFA, Compliance Score flags that as a recommended action for you to take.
+Compliance Score automatically scans through your Microsoft 365 environment and detects your system settings, continuously and automatically updating your technical control status. Compliance Score uses Secure Score as the underlying engine that performs the monitoring. [Learn more about Secure Score and how it works](../security/mtp/microsoft-secure-score.md).
 
-Compliance Score updates your control status every 24 hours. Once you follow a recommendation to implement a control, you will see the control status updated the next day.
+Your control status is updated on your Compliance Score dashboard every 24 hours. Once you follow a recommendation to implement a control, you will see the control status updated the next day.
 
-During public preview, continuous assessment is available to a portion controls, but not all.
+For example, if you turn on multi-factor authentication (MFA) in the Azure AD portal, Compliance Score detects the setting and reflects that in the control access solution details. Conversely, if you didn’t turn on MFA, Compliance Score flags that as a recommended action for you to take.
+
+During public preview, continuous assessment is available to a portion of controls, but not all.
   
 ## Control types and points
 

@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Commodity Futures Trading Commission (CFTC) Rule 1.31(c-d) United States
+# Commodity Futures Trading Commission (CFTC) Rule 1.31(c-d) United States
 
 ## About CFTC Rule 1.3(c-d)
 

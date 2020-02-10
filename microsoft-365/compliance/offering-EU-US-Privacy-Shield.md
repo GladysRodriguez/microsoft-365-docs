@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: EU-US and Swiss-US Privacy Shield Frameworks
+# EU-US and Swiss-US Privacy Shield Frameworks
 
 ## About the EU-U.S. and Swiss-U.S. Privacy Shield frameworks
 

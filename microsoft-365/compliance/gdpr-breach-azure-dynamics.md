@@ -5,6 +5,8 @@ keywords: Azure, Microsoft 365, Dynamics 365, Microsoft 365 documentation, GDPR
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,6 +14,7 @@ audience: itpro
 ms.collection: 
 - GDPR
 - M365-security-compliance
+titleSuffix: Microsoft GDPR
 ---
 
 # Azure and Dynamics 365 breach notification under the GDPR

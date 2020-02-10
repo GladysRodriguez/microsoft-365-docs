@@ -5,6 +5,8 @@ keywords: Dynamics 365, Microsoft 365, Microsoft 365 Education, Microsoft 365 do
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,6 +14,7 @@ audience: itpro
 ms.collection: 
 - GDPR
 - M365-security-compliance
+titleSuffix: Microsoft GDPR
 ---
 
 # Dynamics 365 and Breach Notification Under the GDPR

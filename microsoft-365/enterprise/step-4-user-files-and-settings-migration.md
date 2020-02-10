@@ -1,5 +1,7 @@
 ﻿---
 title: Step 4 - User Files and Settings Migration
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -46,7 +48,7 @@ If you are opting for a manual migration, you may need to assess whether you wil
 
 ## Automated Migration using USMT 
 
-For large-scale deployments you can automate much of the process using task sequence-based deployment automation tools such as System Center Configuration Manager or the Microsoft Deployment Toolkit (MDT). Both these solutions make use User State Migration Tool (USMT) as part of their end-to-end deployment process. USMT is part of the [Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
+For large-scale deployments you can automate much of the process using task sequence-based deployment automation tools such as Microsoft Endpoint Configuration Manager or the Microsoft Deployment Toolkit (MDT). Both these solutions make use User State Migration Tool (USMT) as part of their end-to-end deployment process. USMT is part of the [Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
 
 USMT captures user accounts, user files, operating system settings, and application settings, and them migrates them to a new Windows installation. It also gives you, the IT Admin, control of exactly what gets migrated and, optionally, can exclude unwanted file types – for example audio and video files, or executables.
 

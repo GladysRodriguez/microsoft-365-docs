@@ -1,5 +1,7 @@
 ---
 title: "Work with Microsoft Compliance Manager (Preview)"
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -11,7 +13,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Compliance Manager is a free workflow-based risk assessment tool in the Microsoft Service Trust Portal. Compliance Manager enables you to track, assign, and verify regulatory compliance activities related to Microsoft cloud services."
+description: "Microsoft Compliance Manager is a free workflow-based risk assessment tool in the Microsoft Service Trust Portal. Compliance Manager enables you to track, assign, and verify regulatory compliance activities related to Microsoft products."
 ---
 
 # Work with Microsoft Compliance Manager (Preview)
@@ -25,11 +27,11 @@ You access Compliance Manager from the Service Trust Portal. Anyone with a Micro
   
 1. Go to [https://servicetrust.microsoft.com](https://servicetrust.microsoft.com/).
 
-2. Sign in with your Microsoft service account. This is your Office 365, Microsoft 365, or Azure Active Directory (Azure AD) user account.
+2. Sign in with your Microsoft service account, which is your Office 365, Microsoft 365, or Azure Active Directory (Azure AD) user account.
 
-3. In the Service Trust Portal, select **Compliance Manager**. This is the preview version of Compliance Manager. **Compliance Manager (Classic)** is the link to the previous version of Compliance Manager.
+3. In the Service Trust Portal, we recommend selecting **Compliance Manager**, which is the preview version with the most current features. **Compliance Manager (Classic)** takes you to the previous version of Compliance Manager.
 
-4. When the Non-Disclosure Agreement is displayed, read it, and select **Agree** to continue. You must agree once, and then the Compliance Manager dashboard is displayed.
+4. When the Non-Disclosure Agreement is displayed, read it and select **Agree**, which then displays your Compliance Manager dashboard.
 
 To get you started, an ISO/IEC 27001:2103 Assessment for Office 365 appears by default for your organization.
 
@@ -67,37 +69,64 @@ To add or remove users from Compliance Manager roles.
 
 ### Controlling automatic Secure Score updates
 
-Secure Score updates can be turned on automatically for all actions, can be turned off for all actions, or can be set by individual action.
+Secure Score updates can be turned on automatically for all actions, turned off for all actions, or set by individual action by following these steps.
 
 1. Sign in to the [Service Trust Portal](https://servicetrust.microsoft.com) with your global administrator account.
 
-2. On the Service Trust Portal top menu bar, select **Admin** and then choose **Settings**.
+2. On the Service Trust Portal top menu bar, under **More**, select **Admin** and then choose **Settings**.
 
-4. In the **Secure Score** tab, select the appropriate button for you chosen setting.
+3. In the **Secure Score** tab, select the corresponding button to either **turn on for all actions**, **turn off for all actions**, or **set per action.**
+
+If you choose **set per action,** take these additional steps to turn on Secure Score updates for individual actions:
+
+4. Select **Compliance Manager** from the top menu (note: do not select "Compliance Manager (classic)").
+
+5. Select **Tenant Management** in the upper-right corner of your screen.
+
+6. On the **Customer Actions** pane, find your intended action with an ellipsis (**...**) under the **Affected Actions** column. Click on the ellipses and select **Edit.**
+
+7. Switch the **Secure Score continuous update** toggle switch to **On.**
+
+8. Select **Save.** Secure Score continuous monitoring is now turned on for that action.
 
 **Note:** Only the global administrator can turn on or off automatic updates for all actions. The Compliance Manager administrator can turn on automatic updates for individual actions, but not for all actions globally.
 
 ## Groups
 
-Groups allow you to logically organize Assessments and that share common information and workflow tasks between Assessments that have the same or related customer-managed controls. You can group Assessments by year, standard, service, team, division, or agencies within your organization to help minimize customer-managed Actions:
+Groups are containers that allow you to organize Assessments and share common information and workflow tasks between Assessments that have the same or related customer-managed controls.
+
+You can group Assessments in a way that is logical to you, such as by year, standard, service, or based on your organization's teams, divisions, or geographies. Below are examples of two groups and their underlying Assessments:
   
-- **FFIEC IS Assessments 2019**
+- **FFIEC IS Assessments 2020**
   - Office 365 + FFIEC IS
   - Intune + FFIEC IS
 - **Data Security and Privacy Assessments**
   - Office 365 + ISO 27001:2013
   - Office 365 + ISO 27018:2014
 
-When you create a new Assessment, you must create a new group for the Assessment or assign the Assessment to an existing group. Groups cannot be created as stand-alone entities. It's recommended that you determine a grouping strategy for your organization *before* adding new assessments. By default, a Group named "Default Group" is available for your initial Assessments. Groups do not have any security properties. All permissions are associated with Assessments.
+> [!NOTE]
+> We recommend determining a grouping strategy for your organization *before* adding new Assessments. By default, a group named "Default Group" is available for your initial Assessments.
 
-When you work with groups, remember:
+### How to create a group
+
+Groups cannot be created as standalone entities. A group must always contain at least one Assessment, so in order to create a group, you must first create an Assessment to put in the group. Follow the steps below to create a group:
+
+1. Create a new Assessment by selecting **+ Add Assessment** near the top of your dashboard.
+2. From the **Assessment** flyout pane, enter a title for your Assessment and select a template from the drop-down menu.
+3. At **Please select a group or add a new group**, select **Add a new group** and enter your group name in the field below.
+4. To copy information from an existing group, toggle the **Would you like to copy the data from an existing group?** switch to **On.** Select the group you want to copy from the drop-down menu underneath, and select the checkboxes of any fields you want to carry over to the new Assessment in your new group.
+5. Select **Save**. When completed, the flyout pane closes and your new group automatically displays on your dashboard.
+
+What to know when working with groups:
   
-- Related assessment controls in different assessments within the same Group automatically update when completed.
-- New groups can copy information from an existing group when you create a new Assessment. Any information added to the Implementation Details and Test Plan and Management Response fields of customer-managed controls from Assessments in the group that you're copying from are copied to the same (or related) customer-managed controls in the new Assessment. If you're adding a new Assessment to an existing group, common information from Assessments in that group are copied to the new Assessment.
 - Group names (also called *Group IDs*) must be unique within your organization.
-- Groups can contain Assessments for the same certification/regulation, but each group can only contain one Assessment for a specific cloud service/certification pair. For example, a group can't contain two Assessments for Office 365 and NIST CSF. A group can contain multiple Assessments for the same cloud service only if the corresponding certification/regulation for each one is different.
-- Once an assessment has been added to an assessment group, the grouping cannot be changed. You can rename the assessment group, which changes the name of the assessment grouping for all the assessments associated with that group. You can create an assessment and a new assessment group and copy information from an existing assessment, which effectively creates a duplicate of that assessment in a different assessment group.
-- Archiving an assessment breaks the relationship between that assessment and the group. Any further updates to other related assessments are no longer reflected in the archived assessment.
+- Groups do not have any security properties. All permissions are associated with Assessments.
+- Once you add an Assessment to a group, the grouping cannot be changed. You can rename the assessment group, which changes the name of the assessment grouping for all the assessments associated with that group.
+- Related Assessment controls in different Assessments within the same group automatically update when completed.
+- If you add a new Assessment to an existing group, common information from Assessments in that group are copied to the new Assessment.
+- Groups can contain Assessments for the same certification or regulation, but each group can only contain one Assessment for a specific product-certification pair. For example, a group can't contain two Assessments for Office 365 and NIST CSF. A group can contain multiple Assessments for the same product only if the corresponding certification or regulation for each one is different.
+- Hiding an Assessment breaks the relationship between that Assessment and the group. Any further updates to other related Assessments are no longer reflected in the hidden assessment. ([Learn how to hide Assessments.](#hide-a-template-or-an-assessment))
+- Groups cannot be deleted.
 
 ## Tenant Management
 
@@ -144,15 +173,19 @@ You can’t edit an Owner name, but you can modify the description that is displ
 
 The Customer Actions area shows all the customer actions for all Templates and Assessments in Compliance Manager (Preview).
 
-![Compliance Manager — add users](media/compliance-manager-customer-actions.png)
+![Compliance Manager — add users](media/compliance-manager-customer-actions.png "Compliance Manager Customer Actions")
 
-At-a-glance, you can see an Action’s title, owner, category, enforcement, and score, and determine if it is integrated with Secure Score. You can expand an Action and select **Read More** to read the Action’s description and access any links in the description. You can also use this interface to enable and disable Secure Score integration on a per-action basis, and to add custom actions. Actions that have Secure Score integration capabilities have an ellipsis (…) next to them (note that custom actions also have an ellipsis next to them).
+At a glance, you can see an Action’s title, owner, category, enforcement, and score, and determine if it is integrated with Secure Score. You can expand an Action and select **Read More** to read the Action’s description and access any links in the description. You can also use this interface to enable and disable Secure Score integration on a per-action basis, and to add custom actions. Actions that have Secure Score integration capabilities have an ellipsis (…) next to them (note that custom actions also have an ellipsis next to them).
 
 #### Enable or disable Secure Score integration
 
 1. Select the ellipses (…) for the Action you want to modify and select **Edit**.
 2. Toggle the switch for Secure Score continuous update to On or Off to enable or disable continuous monitoring through Secure Score.
 3. Select **Save**.
+
+When organizations first deploy Microsoft 365 or Office 365, it takes approximately seven days for Secure Score to fully collect data and factor it into your score. During that time, setting the Secure Score continuous update switch to **Off** and manually setting an action to **implemented** will count that action toward your score. After the initial seven days, turning Secure Score continuous update back on will enable continuous monitoring from that point forward.
+
+Any actions that are not supported by Secure Score integration can be manually implemented. A manual implementation will factor into the score for that action's group.
 
 #### Add a customer action
 
@@ -418,13 +451,13 @@ This tab includes columns that define individual Actions, and it includes detail
 
 - **actionDimensionValues:** Double semicolon-delimited list of applicable dimensions from the Dimensions tab, using the following format:
 
-    ```
+    ```Markdown
     Dimension Key::Dimension Value;;Dimension Key::Dimension Value.
     ```
     
     For example:
 
-    ```
+    ```Markdown
     Product::Office 365;;Certification::NIST CSF
     ```
 
@@ -458,7 +491,7 @@ Templates and Assessments support the use of Markdown language for some text ele
 
 Bullets are represented as asterisks instead of Word or Excel bullets. For example:
 
-```
+```Markdown
 * Item A
 * Item B
 * Item C
@@ -477,15 +510,16 @@ Numbers are represented as numbers, but with spaces for indentation (three space
 
 Hyperlinks are constructed by placing brackets around the hyperlink text and the hyperlink itself in parentheses immediately next to the close bracket.  For example:
 
-```
+```Markdown
 Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
 ```
 This text renders as follows:  Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
+
 As shown in the above example, Compliance Manager does not render URLs with underlining.
 
-Boldface text is just two asterisks on each side of the text to be bolded.  For example:
+Boldface text is two asterisks on each side of the text to be bolded.  For example:
 
-```
+```Markdown
 **This text will render in bold**
 ```
 **This text renders in bold**

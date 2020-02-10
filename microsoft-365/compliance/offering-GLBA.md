@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Gramm-Leach-Bliley Act (GLBA)
+# Gramm-Leach-Bliley Act (GLBA)
 
 ## GLBA overview
 

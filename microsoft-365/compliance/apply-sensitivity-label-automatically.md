@@ -1,11 +1,13 @@
 ---
 title: "Apply a sensitivity label to content automatically"
-ms.author: krowley
-author: kccross
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.service: O365-seccomp
-ms.date: 11/01/2019
+ms.date: 12/13/2019
 localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
@@ -26,9 +28,9 @@ The ability to apply sensitivity labels to content automatically is important be
 
 - You don't need to rely on users to classify all content correctly.
 
-- Users no longer need to know about your policies - they can instead focus on their work.
+- Users no longer need to know about your policies — they can instead focus on their work.
 
-For information about license requirements, see [Sensitivity labels in Office apps](sensitivity-labels-office-apps.md).
+For information about license requirements, see [Subscription and licensing requirements for sensitivity labels](sensitivity-labels-office-apps.md#subscription-and-licensing-requirements-for-sensitivity-labels).
 
 The auto-labeling settings are available when you create a sensitivity label in the Microsoft 365 compliance center, Microsoft 365 security center, or Office 365 Security & Compliance Center under **Classification** > **Sensitivity labels**.
 
@@ -52,7 +54,7 @@ When a sensitivity label is automatically applied, the user sees a notification 
 
 ## Recommend that the user apply a sensitivity label
 
-If you prefer, you can recommend to your users that they apply the label. With this option, your users can accept the classification and any associated protection, or dismiss the recommendation if the label is not suitable for their document or email.
+If you prefer, you can recommend to your users that they apply the label. With this option, your users can accept the classification and any associated protection, or dismiss the recommendation if the label isn't suitable for their document or email.
 
 Recommended labels are supported in Word, PowerPoint, and Excel (and require that the Azure Information Protection unified labeling client is installed).
 

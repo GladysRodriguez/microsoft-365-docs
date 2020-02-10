@@ -3,6 +3,8 @@ title: Microsoft compliance offerings
 layout: LandingPage
 description: Learn how Microsoft products and services help your organization meet regulatory compliance standards.
 author: robmazz
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 manager: laurawi
 ms.topic: landing-page
@@ -10,6 +12,7 @@ keywords: Microsoft, Microsoft 365, Compliance, Offering
 localization_priority: Normal
 audience: ITPro
 ms.prod: Microsoft-365-enterprise
+titleSuffix: Microsoft Compliance
 ---
 
 # Microsoft compliance offerings
@@ -41,7 +44,7 @@ Microsoft offers a comprehensive set of compliance offerings to help your organi
                         <p><a href="offering-ISO-27701.md">ISO 27701</a></p>
                         <p><a href="offering-ISO-9001.md">ISO 9001</a></p>
                         <p><a href="offering-soc.md">SOC</a></p>
-                        <p><a href="offering-wcag-2-1.md">WCAG 2.1</a></p>
+                        <p><a href="offering-wcag-2-1.md">WCAG</a></p>
                     </div>
                 </div>
             </div>
@@ -125,6 +128,7 @@ Microsoft offers a comprehensive set of compliance offerings to help your organi
                         <p><a href="offering-pci-dss.md">PCI DSS</a></p>
                         <p><a href="offering-rbi-irdai-india.md">RBI + IRDAI (India)</a></p>
                         <p><a href="offering-sec-17a-4.md">SEC 17a-4</a></p>
+                        <p><a href="offering-sec-reg-sci.md">SEC Regulation SCI</a></p>
                         <p><a href="offering-shared-assessments.md">Shared assessments</a></p>
                         <p><a href="offering-sox.md">SOX</a></p>
                         <p><a href="offering-tisax-germany.md">TISAX (Germany)</a></p>
@@ -150,19 +154,20 @@ Microsoft offers a comprehensive set of compliance offerings to help your organi
                         <p><a href="offering-bir-2012-netherlands.md">BIR 2012 (Netherlands)</a></p>
                         <p><a href="offering-c5-germany.md">C5 (Germany)</a></p>
                         <p><a href="offering-ccpa.md">CCPA (US-California)</a></p>
-                        <p><a href="offering-ccsl-irap-australia.md">CCSL / IRAP (Australia)</a></p>
+                        <p><a href="offering-ccsl-irap-australia.md">IRAP / CCSL (Australia)</a></p>
                         <p><a href="offering-cs-mark-gold-japan.md">CS Mark Gold (Japan)</a></p>
                         <p><a href="offering-cyber-essentials-plus-uk.md">Cyber Essentials Plus (UK)</a></p>
                         <p><a href="offering-canadian-privacy-laws.md">Canadian Privacy Laws</a></p>
                         <p><a href="https://www.trustcenter.cn/compliance/default.html#DJCP">DJCP (China)</a></p>
                         <p><a href="offering-en-301-549-eu.md">EN 301 549 (EU)</a></p>
                         <p><a href="offering-ens-spain.md">ENS (Spain)</a></p>
-                        <p><a href="https://aka.ms/ENISA">ENISA IAF (EU)</a></p>
+                        <p><a href="offering-enisa.md">ENISA IAF (EU)</a></p>
                         <p><a href="offering-eu-model-clauses.md">EU Model Clauses</a></p>
                         <p><a href="offering-eu-us-privacy-shield.md">EU-US Privacy Shield</a></p>
                         <p><a href="https://www.trustcenter.cn/compliance/default.html#GB18030">GB 18030 (China)</a></p>
-                        <p><a href="offering-gdpr-eu.md">GDPR (EU)</a></p>
+                        <p><a href="gdpr.md">GDPR (EU)</a></p>
                         <p><a href="offering-g-cloud-uk.md">G-Cloud (UK)</a></p>
+                        <p><a href="https://www.idw.de/the-idw/about-the-idw">IDW PS 951 (Germany)</a></p>
                         <p><a href="offering-ISMS-korea.md">ISMS (Korea)</a></p>
                         <p><a href="offering-it-grundschutz-workbook-germany.md">IT Grundschutz Workbook (Germany)</a></p>
                         <p><a href="offering-lopd-spain.md">LOPD (Spain)</a></p>
